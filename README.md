@@ -65,3 +65,19 @@ The script expects the following CSV files in the same directory:
   - User type counts
   - Gender distribution (Chicago and NYC only)
   - Birth year statistics (Chicago and NYC only)
+
+## Notes
+
+- Gender and birth year statistics are only available for Chicago and New York City
+- Data can be filtered by month (January to June only)
+- Day selection is done using integers (1-7)
+- Raw data viewing is optional and displayed in 5-row increments
+
+## Error Handling
+
+The script includes input validation to handle:
+
+- Invalid city names
+- Invalid filter choices
+- Invalid month selections
+- Invalid day selections
