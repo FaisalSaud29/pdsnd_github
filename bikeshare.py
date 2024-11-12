@@ -103,10 +103,10 @@ def load_data(city, month, day):
     df['Day of week'] = df['Start Time'].dt.weekday_name    
     
     #Filtering month.
-    if(month != 'none'):
-        months_of_year = ['january','february','march','april','may','june']
-        index_of_month = months_of_year.index(month) + 1
-        df = df[df['Month'] == index_of_month]
+    if month != 'none':
+        months_of_year = {'january': 1, 'february': 2, 'march': 3, 
+                     'april': 4, 'may': 5, 'june': 6}
+    df = df[df['Month'] == months_of_year[month]]
     
     #Filtering day.
     if(day != 0):
