@@ -79,11 +79,19 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     #Reading the csv file.
-    df = pd.read_csv(CITY_DATA[city.lower()])
+    dtype_dict = {
+    'Start Time': str,
+    'End Time': str,
+    'Trip Duration': np.float32,
+    'Start Station': str,
+    'End Station': str,
+    'User Type': 'category'
+    }
+    df = pd.read_csv(CITY_DATA[city.lower()], dtype=dtype_dict)
     
     #converting start time and end time to datetime
-    df['Start Time'] = pd.to_datetime(df['Start Time'])
-    df['End Time'] = pd.to_datetime(df['End Time'])
+    for col in ['Start Time', 'End Time']:
+        df[col] = pd.to_datetime(df[col])
     
     #Making a new hour column.
     df['Hour'] = df['Start Time'].dt.hour
