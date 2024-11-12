@@ -81,3 +81,82 @@ The script includes input validation to handle:
 - Invalid filter choices
 - Invalid month selections
 - Invalid day selections
+
+## Contributing
+
+We welcome contributions to improve the US Bikeshare Data Analysis Program! Here's how you can help:
+
+### Getting Started
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/improvement`)
+3. Make your changes
+4. Test your changes thoroughly
+5. Commit your changes (`git commit -am 'Add new feature'`)
+6. Push to the branch (`git push origin feature/improvement`)
+7. Create a Pull Request
+
+### Areas for Contribution
+
+#### Beginner-Friendly Issues
+
+- Improving documentation and comments
+- Adding input validation
+- Enhancing error messages
+- Writing test cases
+- Adding data sanitation checks
+
+#### Intermediate Features
+
+- Creating data visualizations
+- Adding export functionality for analysis results
+- Implementing additional statistical analyses
+- Creating a command-line interface
+- Adding support for different date ranges
+
+#### Advanced Improvements
+
+- Building a web interface
+- Adding real-time data processing capabilities
+- Implementing database integration
+- Creating data caching mechanisms
+- Adding machine learning predictions for bike usage
+
+### Code Style
+
+- Follow PEP 8 guidelines
+- Include docstrings for new functions
+- Add comments for complex logic
+- Maintain consistent naming conventions
+
+### Testing
+
+- Add unit tests for new features
+- Ensure existing tests pass
+- Include edge cases in test scenarios
+- Test across different Python versions
+
+### Reporting Issues
+
+- Use the issue tracker to report bugs
+- Include detailed steps to reproduce issues
+- Add screenshots if applicable
+- Specify your operating system and Python version
+
+### Code Review Process
+
+1. All contributions require a pull request
+2. Maintainers will review your code
+3. Address any requested changes
+4. Once approved, your code will be merged
+
+### Questions or Suggestions?
+
+Feel free to open an issue for:
+
+- Feature requests
+- Bug reports
+- Documentation improvements
+- General questions
+
+We appreciate your interest in improving this project!
